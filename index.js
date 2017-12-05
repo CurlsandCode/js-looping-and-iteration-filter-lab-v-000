@@ -5,7 +5,7 @@ function findMatching(drivers, string){
 }
 function fuzzyMatch(drivers, string){
     const strLen = string.length
-    return driver.filter((element) => { return element.slice(0,strLen) === string})
+    return drivers.filter((element) => { return element.slice(0,strLen) === string})
 }
 function matchName(drivers, string){
   return drivers.filter((element) => {
